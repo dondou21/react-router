@@ -74,3 +74,8 @@ footer {
   margin: 1rem 0;
 }
 
+.site-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

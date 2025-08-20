@@ -1,11 +1,11 @@
 
+
 .van-list-container {
     padding-inline: 23px;
-    min-height: 100vh;
-    background-color: #FEE8D9;
+    background-color:  #f2d5cdff;
   }
   
-  .van-list {
+.van-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -13,22 +13,22 @@
     margin-top: 57px;
   }
   
-  .van-tile a {
+.van-tile a {
     color: #161616;
     text-decoration: none;    
   }
   
-  .van-tile img {
+.van-tile img {
     max-width: 100%;
     border-radius: 5px;
   }
   
-  .van-list-container button {
+.van-list-container button {
     margin-right: 20px;
     cursor: pointer;
   }
   
-  .van-type {
+.van-type {
     height: 34px;
     padding: 6px 26px;
     font-style: normal;
@@ -40,31 +40,31 @@
     transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .van-type:hover {
+.van-type:hover {
     color: #FFEAD0;
   }
   
-  .van-type:focus {
+.van-type:focus {
     outline: none;
   }
   
-  .van-type.selected {
+.van-type.selected {
     color: #FFEAD0;
   }
   
-  .van-type.simple:hover, .van-type.simple.selected {
+.van-type.simple:hover, .van-type.simple.selected {
     background-color: #E17654;
   }
   
-  .van-type.rugged:hover, .van-type.rugged.selected {
+.van-type.rugged:hover, .van-type.rugged.selected {
     background-color: #115E59;
   }
   
-  .van-type.luxury:hover, .van-type.luxury.selected {
+.van-type.luxury:hover, .van-type.luxury.selected {
     background-color: #161616;
   }
   
-  .van-type.clear-filters {
+.van-type.clear-filters {
     margin-left: -20px;
     height: 34px;
     padding: 6px 26px;
@@ -77,15 +77,15 @@
     color: #4D4D4D;
   }
   
-  i[class*='van-type-'] {
+i[class*='van-type-'] {
     padding: 7px 14px;
   }
   
-  .van-info {
+.van-info {
     color: black;
   }
 
-  .van-tile img {
+.van-tile img {
     width: 100%;       
     max-width: 400px;  
     height: auto;      
@@ -94,13 +94,13 @@
   }
   
 
-  h1 { 
+h1 { 
     display: flex;
     color: black;
     justify-content: center;
   }
 
-  .van-detail-container {
+.van-detail-container {
     padding: 27px;
 }
 

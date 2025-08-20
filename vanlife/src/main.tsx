@@ -1,9 +1,12 @@
 
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Home.tsx'
 import Van from './Van.tsx'
+import VanDetail from './VanDetail.tsx'
 import About  from './About.tsx'
+import Layout from './components/Layout.tsx'
+import HostLayout from './components/HostLayout.tsx'
 import "../server.js"
 import './index.css'
 
@@ -11,23 +14,21 @@ import './index.css'
 createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
   <div className='page-container'>
-      <nav>
-        <Link className='site-logo' to="/">#VANLIFE</Link>
-        <div className='link'>
-          <Link className='link-items' to="/about">About</Link>
-          <Link className='link-items' to="/van">Vans</Link>
-        </div>
-      </nav>
-      <main>
+      
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/van' element={<Van />} />
-          <Route path='/about' element={<About />} />
+          <Route path='/' element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/van' element={<Van />} />
+            <Route path='/van/:id' element={<VanDetail />} />
+          </Route>
+
+          <Route path='host' element={<HostLayout />}>
+
+          </Route>
         </Routes>
-      </main>
-      <footer>
-        <h2>© 2022 #VANLIFE</h2>
-      </footer>
+
+
   </div>
 
     

@@ -1,8 +1,8 @@
-
+import './home.css';
 
 export default function Home() {
     return (
-        <div>
+        <div className='home-container'>
             <h1>You got the travel plans, we got the travel vans</h1>
 
             <p>
