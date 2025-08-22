@@ -7,6 +7,7 @@ import VanDetail from './VanDetail.tsx'
 import About  from './About.tsx'
 import Layout from './components/Layout.tsx'
 import HostLayout from './components/HostLayout.tsx'
+import Dashboard from './Dashboard.tsx'
 import "../server.js"
 import './index.css'
 
@@ -24,6 +25,7 @@ createRoot(document.getElementById('root')!).render(
           </Route>
 
           <Route path='host' element={<HostLayout />}>
+            <Route index element={<Dashboard />} />
 
           </Route>
         </Routes>
